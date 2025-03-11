@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 // import icons
 import { IconHome2, IconMenu2, IconX } from "@tabler/icons-react";
@@ -12,8 +12,15 @@ import { Link } from "react-router-dom";
 // import MUI
 import { Button } from "@mui/material";
 
+// import components
+import NavMobile from "./NavMobile";
+
+// import GlobalContext
+import { useGlobalContext } from "../context";
+
 const NavBar = () => {
-  const [menu, setMenu] = useState(true);
+  // destructure Context
+  const { setMenu, menu } = useGlobalContext();
   //   console.log(menu);
 
   return (
@@ -34,6 +41,8 @@ const NavBar = () => {
               </Link>
             ))}
           </ul>
+
+          <NavMobile />
 
           {/* call to actions  */}
           <div className="md:flex md:gap-1 hidden">
