@@ -4,9 +4,12 @@ export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
   const [menu, setMenu] = useState(true);
-  const [showNav, setShowNav] = useState(true);
+
+  const closeNavMenu = () => {
+    setMenu(false);
+  };
   return (
-    <AppContext.Provider value={{ menu, setMenu, showNav, setShowNav }}>
+    <AppContext.Provider value={{ menu, setMenu, closeNavMenu }}>
       {children}
     </AppContext.Provider>
   );

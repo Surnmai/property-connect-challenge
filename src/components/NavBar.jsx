@@ -63,7 +63,7 @@ const NavBar = () => {
             }}
             className="cursor-pointer md:hidden"
           >
-            {menu ? <IconMenu2 size={40} /> : <IconX size={40} />}
+            {menu ? <IconX size={40} /> : <IconMenu2 size={40} />}
           </div>
         </div>
       </header>
