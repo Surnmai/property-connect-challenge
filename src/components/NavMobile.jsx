@@ -51,7 +51,7 @@ const NavMobile = () => {
       >
         {navLinks.map((nav) => (
           <Link
-            // to={nav.path}
+            to={nav.path}
             key={nav.id}
             className="p-2 hover:bg-white hover:text-black transition-all duration-500"
             onClick={() => closeNavMenu()}

@@ -26,7 +26,7 @@ const Properties = () => {
 
   return (
     <>
-      <section>
+      <section id="Properties">
         <div className="container">
           <h3 className="text-center text-5xl mb-4">Our Properties</h3>
           {/* buttons  */}

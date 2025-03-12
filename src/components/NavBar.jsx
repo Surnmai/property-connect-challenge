@@ -28,10 +28,13 @@ const NavBar = () => {
       <header className="fixed top-0 left-0 right-0 z-20 w-full bg-white shadow-md py-4">
         <div className="container flex justify-between items-center ">
           {/* logo  */}
-          <div className="md:flex items-end bg-primary text-white md:text-sm text-xs rounded-md p-[0.3rem] md:p-2 cursor-pointer">
-            <IconHome2 size={40} className="" />
+          <Link
+            to={navLinks[0].path}
+            className="md:flex items-end bg-primary text-white md:text-sm text-xs rounded-md p-[0.3rem] md:p-2 cursor-pointer"
+          >
+            <IconHome2 size={40} />
             <h2>Property Connect</h2>
-          </div>
+          </Link>
 
           {/* nav links  */}
           <ul className="md:flex md:gap-4 hidden">
