@@ -2,8 +2,12 @@ import React from "react";
 
 // import icons
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const PropertiesCard = ({ items }) => {
+  // destructure useNavigate
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -11,6 +15,9 @@ const PropertiesCard = ({ items }) => {
           <div
             key={item.id}
             className=" cursor-pointer rounded-md hover:shadow-lg transition-all duration-500 hover:text-white"
+            onClick={() => {
+              navigate(`/properties/${item.id}`);
+            }}
           >
             {/* image  */}
             <div className="h-[20rem]">
