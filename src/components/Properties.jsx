@@ -37,7 +37,7 @@ const Properties = () => {
           />
 
           {/* Properties list  */}
-          <PropertiesCard items={items} />
+          <PropertiesCard items={items} key={items.id} />
         </div>
       </section>
     </>
