@@ -30,6 +30,7 @@ const SingleProperty = () => {
         <h1>{title}</h1>
         <article className="summary">{desc}</article>
         <article>{price}</article> */}
+        Single Property Page
       </section>
     </>
   );
