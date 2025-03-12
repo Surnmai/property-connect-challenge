@@ -1,9 +1,14 @@
 import React from "react";
 
+// import components
+import Hero from "../components/Hero";
+import Properties from "../components/Properties";
+
 const Home = () => {
   return (
     <>
-      <section className="">Hello Home</section>
+      <Hero />
+      <Properties />
     </>
   );
 };

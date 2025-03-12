@@ -36,7 +36,11 @@ const NavBar = () => {
           {/* nav links  */}
           <ul className="md:flex md:gap-4 hidden">
             {navLinks.map((nav) => (
-              <Link to={nav.path} key={nav.id}>
+              <Link
+                to={nav.path}
+                key={nav.id}
+                className="text-xl hover:bg-primary hover:text-white transition-all duration-500 p-2 rounded-md"
+              >
                 {nav.text}
               </Link>
             ))}

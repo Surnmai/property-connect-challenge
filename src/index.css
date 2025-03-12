@@ -10,5 +10,5 @@
 }
 
 section {
-  @apply py-[6.25rem];
+  @apply py-[100px];
 }
