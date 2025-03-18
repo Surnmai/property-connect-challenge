@@ -14,23 +14,28 @@ const SingleProperty = () => {
   const { items } = useGlobalContext();
 
   const { id } = useParams();
-  console.log(id);
+  // console.log(id);
 
-  const singleProp = items.find((property) => property.id === id);
-  console.log(singleProp);
+  const convNum = parseInt(id, 10);
+  //   console.log(convNum);
 
-  // const { image, title, desc, price } = singleProp;
+  const singleProp = items.find((property) => property.id === convNum);
+  // console.log(singleProp);
+
+  const { img, title, desc, price } = singleProp;
 
   return (
     <>
       <section>
-        {/* <div className="">
-          <img src={image} alt={title} />
+        <div className="container">
+          <div className="">
+            <img src={img} alt={title} />
+          </div>
+          <h1>{title}</h1>
+          <article className="">{desc}</article>
+          <article>{price}</article>
+          {/* Single Property Page */}
         </div>
-        <h1>{title}</h1>
-        <article className="summary">{desc}</article>
-        <article>{price}</article> */}
-        Single Property Page
       </section>
     </>
   );
