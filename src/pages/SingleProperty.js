@@ -33,7 +33,7 @@ const SingleProperty = () => {
           </div>
           <h1>{title}</h1>
           <article className="">{desc}</article>
-          <article>{price}</article>
+          <article>${price}</article>
           {/* Single Property Page */}
         </div>
       </section>
